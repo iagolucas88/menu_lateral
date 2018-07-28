@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="IncludeEngenharia.Views.MainPage">
+    <MasterDetailPage.Master>
+        <!-- Hamburger Menu Secret Sauce... Add an Icon!!!! Make sure it's in your resources for your Platform Project -->
+        <NavigationPage Title="Required Foo" Icon="hamburger.png">
+            <x:Arguments>
+                <ContentPage Title="Menu" BackgroundColor="#2a8954">
+                    <ScrollView>
+                        <Grid ColumnSpacing="0" RowSpacing="0" BackgroundColor="#2a8954">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO" />
+                            </Grid.RowDefinitions>
+
+                            <!--  header background  -->
+                            <Image Aspect="AspectFill" Source="fundo.jpg" />
+                            <Image  HeightRequest="100" Source="User_Circle.png" 
+                                    HorizontalOptions="Center" VerticalOptions="Start" 
+                                    TranslationY="10" WidthRequest="200" Scale="1.1"/>
+                            <Image Source="CurvedMask.png" VerticalOptions="End" Aspect="AspectFill" Margin="0,0,0,-3" Scale="1.2"/>
+                            
+
+
+                                <!--  Profile Name  -->
+                            <StackLayout Grid.Row="1" Orientation="Horizontal" Padding="0,0,0,0" >
+                                <Label Margin="1,0,0,0" Grid.Row="1"
+                                   VerticalOptions="Center" HorizontalOptions="CenterAndExpand" 
+                                   Text="Robson" TextColor="Black" BackgroundColor="#2a8954" 
+                                   FontSize="Large" FontAttributes="None"/>
+                            </StackLayout> 
+                            
+                            <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="10,0,0,0" >
+                                <Image Source="Inicio.png" Scale="0.8" />
+                                <Button HorizontalOptions="FillAndExpand" 
+                                        Text="Início"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                        Command="{Binding NavigateCommand}" CommandParameter="Navigation/Inicio"/>
+                            </StackLayout>
+                           
+                            <StackLayout Grid.Row="3" Orientation="Horizontal" Padding="10,0,0,0" >
+                                <Image Source="Destaques.png" Scale="0.8"/>
+                                <Button HorizontalOptions="FillAndExpand"
+                                        Text="Destaques"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                        Command="{Binding NavigateCommand}" CommandParameter="Navigation/Destaques"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="4" Orientation="Horizontal" Padding="10,0,0,0">
+                                <Image Source="Categoria.png" Scale="0.8"/>
+                                <Button HorizontalOptions="FillAndExpand"
+                                        Text="Categorias"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                        Command="{Binding NavigateCommand}" CommandParameter="Navigation/Categorias"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="5" Orientation="Horizontal" Padding="10,0,0,0">
+                                <Image Source="Favoritos.png" Scale="0.8"/>
+                                <Button HorizontalOptions="FillAndExpand"
+                                        Text="Favoritos"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                        Command="{Binding NavigateCommand}" CommandParameter="Navigation/Favoritos"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="6" Orientation="Horizontal" Padding="10,0,0,0">
+                                <Image Source="Historico.png" Scale="0.8"/>
+                                <Button HorizontalOptions="FillAndExpand"
+                                        Text="Histórico de Buscas"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                            Command="{Binding NavigateCommand}" CommandParameter="Navigation/HistoricoDeBuscas"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="7" Orientation="Horizontal" Padding="10,0,0,0">
+                                <Image Source="MinhasCompras.png" Scale="0.8"/>
+                                <Button HorizontalOptions="FillAndExpand"
+                                        Text="Minhas Compras"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                            Command="{Binding NavigateCommand}" CommandParameter="Navigation/MinhasCompras"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="8" Orientation="Horizontal" Padding="10,0,0,0">
+                                <Image Source="Configuracoes.png" Scale="0.8"/>
+                                <Button HorizontalOptions="FillAndExpand"
+                                        Text="Configurações"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                            Command="{Binding NavigateCommand}" CommandParameter="Navigation/Configuracoes"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="9" Orientation="Horizontal" Padding="10,0,0,0">
+                                <Image Source="SobreOApp.png" Scale="0.8"/>
+                                <Button HorizontalOptions="FillAndExpand"
+                                        Text="Sobre o App"
+                                        Style="{StaticResource FollowButton}"
+                                        BackgroundColor="#2a8954"
+                                        Command="{Binding NavigateCommand}" CommandParameter="Navigation/SobreOApp"/>
+                            </StackLayout>
+                        </Grid>
+                    </ScrollView>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

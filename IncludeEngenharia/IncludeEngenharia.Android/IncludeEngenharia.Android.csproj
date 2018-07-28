@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33530640-F919-4808-A8AB-EA3CD412799C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IncludeEngenharia.Droid</RootNamespace>
+    <AssemblyName>IncludeEngenharia.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.583944" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="7.0.0.396" />
+    <PackageReference Include="Xamarin.Android.Support.Design">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.4.118</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\hamburger.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\LaunchScreen.storyboard" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\hamburger.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\LaunchScreen.storyboard" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Alax.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\bgMenuLateral.jpg" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\bgpraiazul.jpeg" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Carol.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Dina.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Eduardo.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Fernanda.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Fernando.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Gabriel.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Geovane.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Gerfesson.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Gustavo.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\hamburger.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\HeaderBackground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Iago.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Igor.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Ilana.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Isolda.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Jefferson.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Jose.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\JoseTobias.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Julia.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\LaunchScreen.storyboard" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Leonardo.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logocirculo.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logocompleta.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logoinclude.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logoredonda.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logoredonda2.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logoredonda3.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Luiz.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\MateusB.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\MateusF.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\MatheusH.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Nelson.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Paulo.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Pedro.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\portto.jpeg" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ProfilePic.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Renan.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Renato.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Sidnei.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Theresa.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Thomas.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Tiago.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\William.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\hamburger.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\LaunchScreen.storyboard" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Alax.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\bgMenuLateral.jpg" />
+    <AndroidResource Include="Resources\mipmap-mdpi\bgpraiazul.jpeg" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Carol.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Dina.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Eduardo.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Fernanda.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Fernando.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Gabriel.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Geovane.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Gerfesson.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Gustavo.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\hamburger.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\HeaderBackground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Iago.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Igor.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Ilana.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Isolda.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Jefferson.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Jose.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\JoseTobias.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Julia.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\LaunchScreen.storyboard" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Leonardo.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\logocirculo.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\logocompleta.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\logoinclude.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\logoredonda.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\logoredonda2.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\logoredonda3.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Luiz.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\MateusB.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\MateusF.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\MatheusH.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Nelson.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Paulo.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Pedro.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\portto.jpeg" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ProfilePic.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Renan.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Renato.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Sidnei.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Theresa.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Thomas.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Tiago.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\William.png" />
+    <AndroidResource Include="Resources\drawable\hamburger.png" />
+    <AndroidResource Include="Resources\drawable\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable\LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IncludeEngenharia\IncludeEngenharia.csproj">
+      <Project>{3C35FBD5-707D-4251-9CAE-582258528D16}</Project>
+      <Name>IncludeEngenharia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\home.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\User_Circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Categoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Destaques.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SobreOApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Favoritos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Historico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Configuracoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MinhasCompras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CurvedMask.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
